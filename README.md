@@ -22,26 +22,26 @@ Choose **one** of the PVCs to deploy according to your region
 and what storage class you want.
 
 ```sh
-oc apply -f deploy/pvc-[region]-[storageclass].yaml
+kubectl apply -f deploy/pvc-[region]-[storageclass].yaml
 ```
 
 Then deploy the Storability pod
 
 ```sh
-oc apply -f deploy/pod.yaml
+kubectl apply -f deploy/pod.yaml
 ```
 
 Watch the output
 
 ```sh
-oc logs -f storability
+kubectl logs -f storability
 ```
 
 Don't forget to clean up when you're done, otherwise this will run forever!
 
 ```sh
-oc delete pod storability
-oc delete pvc storability
+kubectl delete pod storability
+kubectl delete pvc storability
 ```
 
 ## Edit

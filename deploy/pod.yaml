@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: storability
+spec:
+  volumes:
+    - name: storability
+      persistentVolumeClaim:
+        claimName: storability
+  containers:
+    - name: storability
+      image: reg.1u1.it/okdaas/storability:latest
+      imagePullPolicy: Always
+      volumeMounts:
+        - mountPath: /tmp
+          name: storability

@@ -46,5 +46,5 @@ kubectl delete pvc storability
 
 ## Edit
 
-Git repo: https://github.com/djjudas21/storability
-Image registry: https://reg.1u1.it/harbor/projects/6/repositories/storability
+* Git repo: https://github.com/djjudas21/storability
+* Image registry: https://reg.1u1.it/harbor/projects/6/repositories/storability
